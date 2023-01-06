@@ -51,10 +51,10 @@ wget https://www.cobaltstrike.com/downloads/beacon.h &&
 current_shell=$(echo $(ps -o comm= -p $$) )
 case $current_shell in
 	zsh)
-	(grep -q _prefix_PEzor_ ~/.bashrc || echo "export PATH=\$PATH:~/go/bin/:$INSTALL_DIR:$INSTALL_DIR/deps/donut/:$INSTALL_DIR/deps/wclang/_prefix_PEzor_/bin/") >> ~/.zshrc && 
+	(grep -q _prefix_PEzor_ ~/.bashrc || echo "export PATH=\$PATH:~/go/bin/:$INSTALL_DIR:$INSTALL_DIR/deps/donut/:$INSTALL_DIR/deps/wclang/_prefix_PEzor_/bin/") >> ~/.zshrc 
 	;;
 	bash)
-	(grep -q _prefix_PEzor_ ~/.bashrc || echo "export PATH=\$PATH:~/go/bin/:$INSTALL_DIR:$INSTALL_DIR/deps/donut/:$INSTALL_DIR/deps/wclang/_prefix_PEzor_/bin/") >> ~/.bashrc && 
+	(grep -q _prefix_PEzor_ ~/.bashrc || echo "export PATH=\$PATH:~/go/bin/:$INSTALL_DIR:$INSTALL_DIR/deps/donut/:$INSTALL_DIR/deps/wclang/_prefix_PEzor_/bin/") >> ~/.bashrc 
 	;;
 esac
 
